@@ -40,6 +40,6 @@ jobs:
         run: npm install -g surge
         
       - name: deploye surge
-        run: surge ./build http://dawoodreactapp.surge.sh/ --token "264ecc7f43171fd5ab8c49d15bededf6"
+        run: surge ./build http://dawoodreactapp.surge.sh/ --token $ {{ secrets.SURGE_TOKEN }}
   
         
